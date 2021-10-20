@@ -1,0 +1,83 @@
+.game-screen {
+  background-image: url("../../images/game-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-size: 35px;
+    color: whitesmoke;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__repeat {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 4px 3px 0px 6px;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    & svg {
+      object-fit: contain;
+      object-position: center;
+      width: 25px;
+      height: 25px;
+      fill: white;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 18px;
+  & li{
+    margin: 0 30px;
+  }
+}
+@media (max-width: 660px) {
+  .navigation li {
+    margin: 0 15px;
+  }
+}
+@media (max-width: 480px) {
+  .navigation li {
+    margin: 0 5px;
+  }
+}
+.other {
+  margin: 7px 0;
+}
+.userName {
+  font-size: 35px;
+  font-weight: 700;
+}
+.game-page__link {
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 5px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
